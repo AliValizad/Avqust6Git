@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+   let student = {
+  firstName: "Ali",
+  lastName: "Valizadeh",
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+    </script>
+    🟢 1. Asan səviyyə
+
+Tapşırıq 1:
+Aşağıdakı kimi bir obyekt yaradın:
+
+let student = {
+  firstName: "Afsana",
+  lastName: "Talibova",
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+console.log(student.fullName);
+
+
+✅ Tapşırıq: set fullName() əlavə edin ki, student.fullName = "Lale Huseynova" yazanda firstName və lastName avtomatik dəyişsin.
+
+
+🟡 2. Orta səviyyə
+
+Tapşırıq 2:
+Aşağıdakı obyektə bax:
+
+let product = {
+  name: "Book",
+  priceUSD: 10,
+}
+
+product.priceAZN çağıranda qiyməti manatla göstərsin.
+
+İpucu:
+manata çevirmək üçün priceUSD-ni 1.7 yə vurmaq lazımdır. 1USD = 1.7AZN
+
+</body>
+
+</html>
